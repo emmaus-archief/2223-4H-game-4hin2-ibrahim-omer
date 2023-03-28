@@ -23,7 +23,9 @@ var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
 
 var vijandX = 600;
-var vijandY = 500;
+var vijandY = 400;
+
+var snelheidmens = 10;
 
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
@@ -35,19 +37,19 @@ var vijandY = 500;
 var beweegAlles = function() {
   // speler
   if (keyIsDown(65)) {
-    spelerX = spelerX - 10; 
+    spelerX = spelerX - snelheidmens; 
   }
 
   if (keyIsDown(68)) {
-    spelerX = spelerX + 10;
+    spelerX = spelerX + snelheidmens;
   }
 
   if (keyIsDown(87)) {
-    spelerY = spelerY - 10;
+    spelerY = spelerY - snelheidmens;
   }
 
   if (keyIsDown(83)) {
-    spelerY = spelerY + 10;
+    spelerY = spelerY + snelheidmens;
   }
   };
   // vijand
@@ -76,7 +78,7 @@ var verwerkBotsing = function() {
  */
 var tekenAlles = function() {
   // achtergrond
-fill("green");
+fill("pink");
 rect(0, 0, 1280, 720);
   // vijand
 
