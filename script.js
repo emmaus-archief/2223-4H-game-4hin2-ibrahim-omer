@@ -53,6 +53,8 @@ var beweegAlles = function() {
   };
   // vijand
 
+//
+
   // kogel
 
 
