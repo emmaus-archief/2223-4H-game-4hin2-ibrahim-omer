@@ -19,14 +19,13 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
-var spelerX = 600; // x-positie van speler
-var spelerY = 600; // y-positie van speler
+var spelerX = 1080; // x-positie van speler
+var spelerY = 650; // y-positie van spelerw
 
-var vijandX = 600;
-var vijandY = 400;
+var vijandX = 200;
+var vijandY = 650;
 
 var snelheidmens = 10;
-
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -80,6 +79,9 @@ var tekenAlles = function() {
   // achtergrond
 fill("pink");
 rect(0, 0, 1280, 720);
+  // map
+  fill(0,0,0);
+rect(0, 675, 1280, 70);
   // vijand
 
   // kogel
