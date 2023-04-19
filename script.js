@@ -17,7 +17,14 @@
 /* ********************************************* */
 
 const KEY_A = 65;
+const KEY_W = 87;
+const KEY_S = 83;
+const KEY_D = 68;
+
 const KEY_LEFT = 37;
+const KEY_UP = 38;
+const KEY_DOWN = 40;
+const KEY_RIGHT = 39;
 
 const SPELEN = 1;
 const GAMEOVER = 2;
@@ -43,15 +50,15 @@ var beweegAlles = function() {
     spelerX = spelerX - snelheidmens; 
   }
 
-  if (keyIsDown(68)) {
+  if (keyIsDown(KEY_D)) {
     spelerX = spelerX + snelheidmens;
   }
 
-  if (keyIsDown(87)) {
+  if (keyIsDown(KEY_W)) {
     spelerY = spelerY - snelheidmens;
   }
 
-  if (keyIsDown(83)) {
+  if (keyIsDown(KEY_S)) {
     spelerY = spelerY + snelheidmens;
   }
   
@@ -59,6 +66,20 @@ var beweegAlles = function() {
   if (keyIsDown(KEY_LEFT)) {
     vijandX = vijandX - snelheidmens; 
   }
+
+  if (keyIsDown(KEY_RIGHT)) {
+    vijandX = vijandX + snelheidmens; 
+  }
+
+  if (keyIsDown(KEY_UP)) {
+    vijandY = vijandY - snelheidmens; 
+  }
+
+   if (keyIsDown(KEY_DOWN)) {
+    vijandY = vijandY + snelheidmens; 
+  }
+
+
 
   // kogel
 
