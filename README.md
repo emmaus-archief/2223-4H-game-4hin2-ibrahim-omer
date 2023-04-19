@@ -18,3 +18,18 @@ https://emmauscollege.github.io/informatica/game/
 - icon <br>
         http://www.iconarchive.com/show/android-lollipop-icons-by-dtafalonso/Play-Games-icon.html
 - ...
+
+
+## Plan:
+1. speler beweegt => klaar
+2. speler 2 tekene en bewegen => omer
+3. achtergrond plaatje (zie video) => ibi
+5. kogel bij speler 1 maken
+6.  kogel bij speler 2 maken
+7.  Health variabel maken en op het scherm zetten
+8.  botsinf detectie aanpassen zodat kogel life eraf is
+9.  blokken maken waar je niet tegenaan kan
+10.  score maken (als je schiet 5 punten)
+
+uitbreiding (hier mag je pas aan beginnen als de rest af is)
+- blokken door trapesium vernaderen

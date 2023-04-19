@@ -15,6 +15,10 @@
 /* ********************************************* */
 /* globale variabelen die je gebruikt in je game */
 /* ********************************************* */
+
+const KEY_A = 65;
+const KEY_LEFT = 37;
+
 const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
@@ -35,7 +39,7 @@ var snelheidmens = 10;
  */
 var beweegAlles = function() {
   // speler
-  if (keyIsDown(65)) {
+  if (keyIsDown(KEY_A)) {
     spelerX = spelerX - snelheidmens; 
   }
 
@@ -50,13 +54,15 @@ var beweegAlles = function() {
   if (keyIsDown(83)) {
     spelerY = spelerY + snelheidmens;
   }
-  };
+  
   // vijand
-
-//
+  if (keyIsDown(KEY_LEFT)) {
+    vijandX = vijandX - snelheidmens; 
+  }
 
   // kogel
 
+};
 
 /**
  * Checkt botsingen
